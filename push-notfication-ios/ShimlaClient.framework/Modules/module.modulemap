@@ -1,0 +1,11 @@
+framework module ShimlaClient {
+  umbrella header "ShimlaClient.h"
+
+  export *
+  module * { export * }
+}
+
+module ShimlaClient.Swift {
+    header "ShimlaClient-Swift.h"
+    requires objc
+}
